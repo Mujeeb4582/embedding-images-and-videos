@@ -50,6 +50,7 @@ nav{
     top: 105px;
 }
 nav ul{
+    list-style: none;
     white-space: nowrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -78,16 +79,22 @@ article p{
     line-height: 2em;
     color: #4b4b4b;
 }
+main ul{
+    list-style: none;
+}
 .images{
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    grid-gap: 18px;
     text-align: center;
     margin: 80px 0;
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    /* height: calc(100vh - 116px); */
 }
-.images li{
-    display: inline-block;
+/* .images li{
     width: 40%;
     margin: 20px 5%;
-}
+} */
 .images li img{
     max-width: 100%;
 }
